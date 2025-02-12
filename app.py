@@ -83,7 +83,7 @@ if prompt := st.chat_input("Posez votre question..."):
             
             try:
                 response = client.chat.completions.create(
-                    model="gpt-4",  # Utilise GPT-4 pour des réponses optimales
+                    model="gpt-3.5-turbo",  # Utilise GPT-4 pour des réponses optimales
                     messages=[{"role": msg["role"], "content": msg["content"]} for msg in selected_chat["messages"]]
                 )
                 full_response = response.choices[0].message.content
