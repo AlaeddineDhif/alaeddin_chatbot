@@ -1,0 +1,60 @@
+/* Modifier la barre de défilement (scrollbar) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #DEF2F1; /* Même couleur que la partie chat */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #3AAFA9; /* Même couleur que la partie chat */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2B7A78; /* Assombrissement léger au survol */
+}
+
+/* Améliorer le slider (barre de progression) */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    background: #DEF2F1; /* Même couleur que la zone de chat */
+    outline: none;
+    transition: background 0.3s;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #3AAFA9; /* Même couleur que la partie chat */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #2B7A78; /* Assombrissement léger au survol */
+}
+
+/* Centrer et styliser le titre */
+h1 {
+    text-align: center;
+    color: #2B7A78;
+    border-bottom: 3px solid #17252A;
+    padding-bottom: 10px;
+}
+
+/* Supprimer la bordure rouge du champ de texte */
+.stTextInput input:focus {
+    outline: none !important;
+    border-color: #3AAFA9 !important; /* Optionnel : Changer la couleur de la bordure */
+    box-shadow: none !important;
+}
+
+/* Supprimer la bordure rouge du bouton */
+.stButton button:focus {
+    outline: none !important;
+    border-color: #3AAFA9 !important; /* Optionnel : Changer la couleur de la bordure */
+    box-shadow: none !important;
+}
